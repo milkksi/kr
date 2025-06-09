@@ -9,9 +9,16 @@ body {
     color: white;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .container {
     max-width: 1920px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 .header {
@@ -39,17 +46,19 @@ body {
 }
 
 .nav {
-    flex-grow: 1; 
-    display: flex; 
-    justify-content: flex-end; 
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav ul {
     list-style: none;
-    display: flex; 
+    display: flex;
     gap: 36px;
-    padding: 0; 
-    margin: 0; 
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav li {
@@ -58,31 +67,29 @@ body {
 }
 
 .nav li:hover {
-    color: #3805f2; 
+    color: #3805f2;
 }
 
 .nav-icon {
-    width: 24px; 
+    width: 24px;
     height: auto;
-    margin-left: 10px; 
-    vertical-align: middle; 
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 .buy-ticket {
-    background-color: #3805f2; 
-    color: white; 
-    border: none; 
-    padding: 10px 12px; 
-    border-radius: 10px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
+    background-color: #3805f2;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .buy-ticket:hover {
-    background-color: #2904c2; 
+    background-color: #2904c2;
 }
-
-
 
 .intro {
     text-align: center;
@@ -100,29 +107,27 @@ body {
 }
 
 .highlight {
-    color: #3805f2; 
+    color: #3805f2;
 }
 
 .more-info {
-    background-color: #3805f2; 
-    color: white; 
-    border: none; 
-    padding: 20px 40px; 
-    border-radius: 10px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-    margin-top: 20px; 
+    background-color: #3805f2;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 .more-info:hover {
-    background-color: #2904c2; 
+    background-color: #2904c2;
 }
-
 
 .event-img {
     width: 100%;
     max-width: 809px;
-    height: auto;
     margin: 20px auto;
 }
 
@@ -140,12 +145,12 @@ body {
 }
 
 .events h3 {
-    font-size: 44px; 
-    font-weight: bold; 
+    font-size: 44px;
+    font-weight: bold;
 }
 
 .events p {
-    font-size: 28px; 
+    font-size: 28px;
     margin: 10px 0;
 }
 
@@ -158,102 +163,91 @@ body {
 }
 
 .event-card:hover, .event-card1:hover, .discount-card:hover, .kio img:hover, .review-card img:hover {
-    transform: scale(1.02); 
+    transform: scale(1.02);
 }
 
 .event-card img, .discount-card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    position: static;
+    margin: 0 auto;
+}
+
+.event-card, .event-card1 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 35px;
+    text-align: center;
+    border-radius: 18px;
+    position: relative;
+    margin-left: 0;
 }
 
 .event-card {
-    width: 100%;
-    box-sizing: border-box; 
-    padding: 40px 35px; 
-    text-align: center; 
-    background-color: white; 
-    border-radius: 18px; 
+    background-color: white;
     color: #000000;
-    position: relative;
-    margin-left: 100px;
 }
 
 .event-card1 {
-    width: 100%;
-    box-sizing: border-box; 
-    padding: 40px 35px; 
-    text-align: center; 
-    background-color: #3805f2; 
-    border-radius: 18px; 
+    background-color: #3805f2;
     color: white;
-    position: relative;
-    margin-left: 100px;
 }
 
-.event-card img {
-    width: 50px; 
-    height: auto; 
-    position: absolute; 
-    bottom: 10px; 
-    right: 10px; 
-}
-
-.event-card1 img {
-    width: 50px; 
-    height: auto; 
-    position: absolute; 
-    bottom: 10px; 
-    right: 10px; 
+.event-card img, .event-card1 img {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .event-card2 {
-    flex-grow: 1; 
-    background-color: #131313; 
-    padding: 20px; 
-    display: flex; 
+    flex-grow: 1;
+    background-color: #131313;
+    padding: 20px;
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     border-radius: 18px;
 }
 
 .event-card2 img {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%;
+    height: auto;
 }
 
 .event-container {
     display: flex;
-    gap: 40px; 
+    gap: 40px;
     flex-direction: column;
 }
 
 .event-container1 {
-    display: flex; 
+    display: flex;
     gap: 10px;
 }
 
 .ccc {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    gap: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .cccimg {
-    width: 50px; 
-    height: auto; 
+    width: 50px;
+    height: auto;
 }
 
 .discount-card {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    gap: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
-
-.discount-card h5, .discount-card h3, .discount-card h4  {
+.discount-card h5, .discount-card h3, .discount-card h4 {
     text-align: center;
     background-color: #131313;
     padding: 10px 15px;
@@ -265,102 +259,98 @@ body {
     font-size: 22px;
 }
 
-.discount-card h5{
+.discount-card h5 {
     background-color: #3805f2;
 }
 
 .asd {
-    display: flex;               
-    flex-direction: column;    
-    align-items: center;        
-    justify-content: center;   
-    text-align: center;        
-    margin: 0 auto;          
-    padding: 20px;            
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .asd img {
-    margin: 10px 0;           
+    margin: 10px 0;
 }
 
-
 .buyasd {
-    background-color: white;  
-    color: black;             
-    border: none;             
-    border-radius: 12px;     
-    padding: 10px 20px;       
-    cursor: pointer;          
-    width: 100%;              
-    max-width: 1400px;        
-    text-align: center;     
-    margin-top: 20px;         
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 1400px;
+    text-align: center;
+    margin-top: 20px;
     font-size: 24px;
 }
 
 .review-card {
-    display: flex; 
-    gap: 20px; 
+    display: flex;
+    gap: 20px;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .review-card img {
-    border-radius: 15px; 
-    width: 100%; 
-    height: auto; 
-    padding: 50px 50px;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
 }
 
 .kio {
-    display: flex; 
-    gap: 20px; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .kio img {
-    border-radius: 15px; 
-    width: 100%; 
-    height: auto; 
-    padding: 80px 80px;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
 }
 
-
 .booking {
-    padding: 100px; 
+    padding: 100px;
 }
 
 .ghj1 {
-    display: flex; 
-    align-items: flex-start; 
+    display: flex;
+    align-items: flex-start;
 }
 
 .ghj {
     display: flex;
-    flex-direction: column; 
-    gap: 10px; 
-    margin-right: 20px; 
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
 }
 
-
 .ghj form {
-    width: 600px; 
-    box-sizing: border-box; 
-    padding: 120px 80px; 
-    background-color: #000000; 
-    border-radius: 25px; 
+    width: 600px;
+    box-sizing: border-box;
+    padding: 120px 80px;
+    background-color: #000000;
+    border-radius: 25px;
     color: white;
     margin-left: 200px;
     height: 380px;
 }
 
 .ghj h6 {
-    text-align: left; 
-    color: white; 
+    text-align: left;
+    color: white;
     margin-left: 200px;
 }
-
 
 .booking form {
     display: flex;
@@ -377,7 +367,7 @@ body {
 }
 
 .booking input::placeholder {
-    color: #ccc; 
+    color: #ccc;
 }
 
 .booking button {
@@ -391,7 +381,7 @@ body {
 }
 
 .booking button:hover {
-    background: #4a06f2; 
+    background: #4a06f2;
 }
 
 .footer {
@@ -410,7 +400,7 @@ body {
 }
 
 .footer a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .ret {
@@ -425,6 +415,7 @@ body {
     border: 2px solid white;
 }
 
+/* --- Адаптив --- */
 @media (max-width: 1200px) {
     .container {
         max-width: 100%;
@@ -437,7 +428,7 @@ body {
     }
     .nav ul {
         flex-wrap: wrap;
-        gap: 14px;
+        gap: 16px;
     }
     .event-container1 {
         flex-direction: column;
@@ -477,6 +468,10 @@ body {
         max-width: 100% !important;
         height: auto !important;
     }
+    .ghj h6 {
+        margin-left: 0 !important;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -493,7 +488,7 @@ body {
     .event-card img, .event-card1 img {
         width: 28px !important;
     }
-    .discount-card h5, .discount-card h3, .discount-card h4  {
+    .discount-card h5, .discount-card h3, .discount-card h4 {
         max-width: 60px !important;
         font-size: 12px !important;
         padding: 3px 2px !important;
@@ -504,6 +499,13 @@ body {
     .ret {
         padding: 4px 2px !important;
         max-width: 100% !important;
+    }
+    .intro {
+        padding: 30px 5px !important;
+    }
+    .buyasd {
+        font-size: 16px !important;
+        padding: 8px 0 !important;
     }
 }
 
@@ -533,5 +535,8 @@ body {
         margin: 0 !important;
         height: auto !important;
         display: block;
+    }
+    .discounts h2, .ccc h2, .reviews h2, .booking h2 {
+        font-size: 14px !important;
     }
 }
