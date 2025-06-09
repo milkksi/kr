@@ -428,7 +428,7 @@ body {
 @media (max-width: 1200px) {
     .container {
         max-width: 100%;
-        padding: 0 20px;
+        padding: 0 10px;
     }
     .header {
         flex-direction: column;
@@ -437,97 +437,101 @@ body {
     }
     .nav ul {
         flex-wrap: wrap;
-        gap: 16px;
+        gap: 14px;
     }
     .event-container1 {
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
     }
-    .ccc {
+    .event-card, .event-card1 {
+        margin-left: 0 !important;
+        padding: 18px 4px !important;
+    }
+    .event-card img, .event-card1 img {
+        width: 40px !important;
+        bottom: 4px;
+        right: 4px;
+    }
+    .event-card2 {
+        padding: 8px !important;
+    }
+    .asd img, .kio img, .review-card img {
+        padding: 0 !important;
+        margin: 0 auto !important;
+        display: block;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .kio, .review-card {
         flex-direction: column;
-        gap: 8px;
-    }
-    .kio {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .review-card {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .ghj1 {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-    .ghj form {
-        margin-left: 0;
-        padding: 60px 20px;
-        width: 100%;
-        min-width: unset;
-        max-width: 100%;
+        gap: 6px;
     }
     .booking {
-        padding: 30px 5px;
+        padding: 20px 2px !important;
+    }
+    .ghj form {
+        margin-left: 0 !important;
+        padding: 18px 8px !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        height: auto !important;
     }
 }
 
 @media (max-width: 768px) {
     .intro h1 {
-        font-size: 32px;
+        font-size: 24px !important;
     }
     .discounts h2, .ccc h2, .reviews h2, .booking h2 {
-        font-size: 24px;
-        margin-bottom: 15px;
+        font-size: 18px !important;
+        margin-bottom: 8px !important;
     }
     .event-card, .event-card1 {
-        padding: 20px 10px;
-        font-size: 16px;
-        margin-left: 0;
+        font-size: 12px !important;
     }
     .event-card img, .event-card1 img {
-        width: 32px;
-        bottom: 5px;
-        right: 5px;
+        width: 28px !important;
     }
     .discount-card h5, .discount-card h3, .discount-card h4  {
-        max-width: 100px;
-        font-size: 16px;
-        padding: 6px 7px;
-    }
-    .asd img, .kio img, .review-card img {
-        padding: 10px 10px;
+        max-width: 60px !important;
+        font-size: 12px !important;
+        padding: 3px 2px !important;
     }
     .footer {
-        padding: 10px;
+        padding: 6px !important;
     }
     .ret {
-        padding: 10px 2px;
-        max-width: 100%;
+        padding: 4px 2px !important;
+        max-width: 100% !important;
     }
 }
 
 @media (max-width: 480px) {
     .header {
-        padding: 4px;
+        padding: 2px !important;
     }
     .logo-text {
-        font-size: 14px;
+        font-size: 10px !important;
     }
     .nav ul {
         flex-direction: column;
-        gap: 6px;
+        gap: 2px;
         align-items: flex-start;
     }
     .buy-ticket, .buyasd {
-        width: 100%;
-        font-size: 16px;
-        padding: 8px 0;
+        width: 100% !important;
+        font-size: 12px !important;
+        padding: 4px 0 !important;
     }
     .intro {
-        padding: 30px 5px;
+        padding: 10px 1px !important;
     }
     .event-img {
-        max-width: 100%;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        height: auto !important;
+        display: block;
     }
 }
